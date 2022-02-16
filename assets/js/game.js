@@ -63,6 +63,9 @@ var enemyAttack = 12;
 }
 };
 // run fight function to start game
-for(var i = 0; i < enemyNames.length; i++) {
-  fight(enemyNames[i]);
+for (var i = 0; i < enemyNames.length; i++) {
+  var pickedEnemyName = enemyNames[i];
+  enemyHealth = 50;
+    // call fight function with enemy-robot
+  fight(pickedEnemyName);
 }
